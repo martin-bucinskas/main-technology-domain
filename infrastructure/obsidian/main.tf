@@ -96,7 +96,7 @@ data "aws_ami" "ubuntu" {
     values  = ["hvm"]
   }
 
-  owners = var.ec2_ami_owners
+  owners = ["099720109477"]
 }
 
 resource "aws_instance" "obsidian" {
