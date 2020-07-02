@@ -8,7 +8,7 @@ terraform {
 
 resource "aws_kms_key" "obsidian_root_block_kms" {
   description              = "Root block encryption KMS for Obsidian."
-  deletion_window_in_days  = 3
+  deletion_window_in_days  = 7
   key_usage                = "ENCRYPT_DECRYPT"
   customer_master_key_spec = "RSA_4096"
   enable_key_rotation      = true
